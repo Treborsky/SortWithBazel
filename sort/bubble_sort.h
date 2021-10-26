@@ -3,7 +3,6 @@
 
 #include <vector>
 
-template<typename T>
-std::vector<T> bubble_sort(std::vector<T> unsorted, bool ascending, bool inplace);
+std::vector<int> bubble_sort(std::vector<int>& unsorted);
 
 #endif // BUBBLE_SORT_H
