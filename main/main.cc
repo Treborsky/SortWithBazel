@@ -7,9 +7,17 @@ int main() {
         2, 5, 1, 3, 4
     };
 
-    std::vector<int> sorted_arr = quick_sort(arr);
-    
-    for(auto i : sorted_arr) {
-        std::cout << i;
+    std::cout << "Input array: [";
+    for(auto elem : arr) {
+        std::cout << elem << " ";
     }
+    std::cout << "]" << std::endl;
+
+    quicksort(arr, 0, arr.size() - 1);
+
+    std::cout << "Output array: [";
+    for(auto elem : arr) {
+        std::cout << elem;
+    }
+    std::cout << "]" << std::endl;
 }
